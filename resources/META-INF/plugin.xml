@@ -1,0 +1,32 @@
+<idea-plugin>
+  <id>Replace</id>
+  <name>Replace</name>
+  <version>1.0</version>
+  <vendor email="" url=""></vendor>
+
+  <!--描述-->
+  <description></description>
+
+  <!--更改 说明-->
+  <change-notes></change-notes>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="ReplaceId" class="com.replacePlugin.action.ReplaceId" text="ReplaceId" description="ReplaceId">
+      <add-to-group group-id="CodeMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl G" second-keystroke="shift ctrl H"/>
+    </action>
+  </actions>
+
+</idea-plugin>
