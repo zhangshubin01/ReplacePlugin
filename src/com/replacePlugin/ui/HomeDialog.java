@@ -68,6 +68,7 @@ public class HomeDialog extends JDialog {
             e.printStackTrace();
         }
         project.getBaseDir().refresh(false, true);
+
         dispose();
     }
 

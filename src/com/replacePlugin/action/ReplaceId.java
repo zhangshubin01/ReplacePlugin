@@ -25,9 +25,9 @@ public class ReplaceId extends AnAction {
                 "src" + File.separator +
                 "main" + File.separator +
                 "res" + File.separator ;
-
         HomeDialog dialog = new HomeDialog(srcPath, resPath,project);
         dialog.setMinimumSize(new Dimension(800,300));
         dialog.setVisible(true);
+
     }
 }
